@@ -1,6 +1,6 @@
 #!/bin/bash
 # Coded by: github.com/thelinuxchoice
-# Instagram: @linux_choice
+# Instagram: @anmol.kundal
 
 trap 'store;exit 1' 2
 string4=$(openssl rand -hex 32 | cut -c 1-4)
@@ -58,7 +58,7 @@ function start() {
 banner
 #checkroot
 dependencies
-read -p $'\e[1;92mUsername account: \e[0m' user
+read -p $'\e[1;92mUsername account: @anmol.kundal
 checkaccount=$(curl -L -s https://www.instagram.com/$user/ | grep -c "the page may have been removed")
 if [[ "$checkaccount" == 1 ]]; then
 printf "\e[1;91mInvalid Username! Try again\e[0m\n"
